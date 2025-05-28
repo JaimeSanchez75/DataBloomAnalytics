@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Configurar Alertas</title>
+  <link rel="stylesheet" href="../app/app.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+        <img src="../app/ico/DBA.png" alt="Logo Data Bloom Analytics" />
+      </div>
+    <ul>
+      <li><a href="../sobre/sobre.html">Data Bloom Analytics</a></li>
+      <li>a</li>
+      <li>a</li>
+      <li>a</li>
+      <li>a</li>
+      <li><a href="../app/app.html">🏠 Inicio</a></li>
+      <li><a href="../reporte/reporte.html">📤 Compartir reportes</a></li>
+      <li><a href="../resultados/resultados.html">📊 Visualizar resultados</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <h2>Configurar Alertas</h2>
+    <form id="alert-form">
+      <label for="alert-type">Tipo de alerta:</label>
+      <select id="alert-type" required>
+        <option value="">Selecciona una alerta</option>
+        <option value="stock">Stock Bajo</option>
+        <option value="caducidad">Plazo de caducidad</option>
+        <option value="ventas">Ventas Anormales</option>
+      </select>
+
+      <label for="alert-threshold">Umbral:</label>
+      <input type="number" id="alert-threshold" placeholder="Número para alerta" min="1" required />
+
+      <button type="submit">Crear alerta</button>
+    </form>
+  </main>
+</body>
+</html>
