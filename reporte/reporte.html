@@ -22,20 +22,44 @@
         <li><a href="../resultados/resultados.html">📊 Visualizar resultados</a></li>
       </ul>
   </nav>
-
+<div class="content-wrapper">
   <main class="main-content">
     <section>
       <h2>Compartir reportes</h2>
       <form>
-        <label for="email">Correo destinatario:</label>
+        <label for="email">Correo de contacto:</label>
         <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+        <label for="report-type">¿Qué necesitas?</label>
+        <select id="report-type" required>
+          <option value="">Selecciona un topic</option>
+          <option value="render">Problemas de rendimiento</option>
+          <option value="data-lose">Pérdida de datos</option>
+          <option value="alta">Dar de alta</option>
+          <option value="upgrade">Propuesta de mejora</option>
+          <option value="login-issues">Problemas inicio de sesión y permisos</option>
+          <option value="other">Otro</option>
+          
+        </select>
 
-        <label for="message">Mensaje:</label>
+        <label for="message">Cuéntanos qué pasa</label>
         <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
         <button type="submit">Enviar</button>
       </form>
+      <br>
+      
+      <h2>Hola!</h2>
+      <br><h4>¿Qué normas debes seguir para que tu reporte funcione correctamente?</h4>
+      <br><p>Cuéntanos tu problema de manera clara y concisa y espera hasta 48H para recibir tu respuesta por parte de nuestro Soporte en forma de mensaje en la bandeja de entrada.</p>
+      <br><p>¡No te olvides de rellenar todos los campos!</p>
     </section>
   </main>
+  <footer class="site-footer">
+      <div class="footer-content">
+        <p>    © 2025 Data Bloom Analytics. Todos los derechos reservados.  -   🔒 Página verificada · Licencia de uso · Términos y condiciones</p>
+        
+      </div>
+    </footer>
+    </div>
 </body>
 </html>

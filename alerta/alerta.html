@@ -22,23 +22,53 @@
       <li><a href="../resultados/resultados.html">📊 Visualizar resultados</a></li>
     </ul>
   </nav>
-
+  <div class="content-wrapper">
   <main class="main-content">
     <h2>Configurar Alertas</h2>
     <form id="alert-form">
       <label for="alert-type">Tipo de alerta:</label>
       <select id="alert-type" required>
-        <option value="">Selecciona una alerta</option>
-        <option value="stock">Stock Bajo</option>
+        <option value="">Selecciona el tipo</option>
+        <option value="stock-low">Stock Bajo</option>
+        <option value="stock-over">Stock muy Alto</option>
         <option value="caducidad">Plazo de caducidad</option>
         <option value="ventas">Ventas Anormales</option>
+        <option value="recordatorio">Recordatorio</option>
       </select>
 
-      <label for="alert-threshold">Umbral:</label>
-      <input type="number" id="alert-threshold" placeholder="Número para alerta" min="1" required />
+      <label for="alert-timer">¿Cada cuánto aparece?</label>
+      <select id="alert-type" required>
+        <option value="">Selecciona la frecuencia</option>
+        <option value="OneTime">Un solo uso</option>
+        <option value="OneDay">1 Día</option>
+        <option value="OneWeek">1 Semana</option>
+        <option value="OneWeek">2 Semanas</option>
+        <option value="OneMonth">1 Mes</option>
+        <option value="ThreeMonth">3 Meses</option>
+      </select>
+      <label for="message">Texto de la notificación.</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      
 
-      <button type="submit">Crear alerta</button>
+      <button type="submit">Crear alerta</button> <button>Alertas anteriores</button> <button >Editar una alerta anterior</button> 
+      <br>
     </form>
+    <br>
+    <br>
+    <br>
+    <h4>¡Configura tus notificaciones completamente a tu gusto!</h4>
+    <br>
+    <p>Todo a tu disposición para que puedas consultar las novedades de tu empresa.</p>
+    <p>Próximamente añadiremos notificaciones con sonidos personalizados, para reconocer más fácilmente que clase de evento te encuentras.</p>
+    
+    
   </main>
+  <footer class="site-footer">
+      <div class="footer-content">
+        <p>    © 2025 Data Bloom Analytics. Todos los derechos reservados.  -   🔒 Página verificada · Licencia de uso · Términos y condiciones</p>
+        
+      </div>
+    </footer>
+    </div>
 </body>
 </html>

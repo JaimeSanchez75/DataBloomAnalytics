@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conectar Fuente de Datos</title>
+  <link rel="stylesheet" href="../app/app.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <img src="../app/ico/DBA.png" alt="Logo Data Bloom Analytics" />
+    </div>
+    <ul>
+      <li><a href="../sobre/sobre.html">Data Bloom Analytics</a></li>
+      <li><a href="../reporte/reporte.html">📤 Compartir reportes</a></li>
+      <li><a href="../alerta/alerta.html">⚠️ Configurar alertas</a></li>
+      <li><a href="../resultados/resultados.html">📊 Visualizar resultados</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <a href="conectar.html">🔌 Conectar fuente de datos</a>
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <main class="main-content">
+      <section>
+        <h2>Desde este panel puedes cargar, actualizar, respaldar y monitorear tus datos.</h2>
+        <br>
+
+        <h3>📁 Subir o Volcar Nuevos Datos</h3>
+        <form>
+          <label for="dataset-name">Nombre del dataset</label>
+          <input type="text" id="dataset-name" placeholder="Ej: Ventas 2025" required />
+
+          <label for="file-upload">Archivo (.csv, .xls, .json)</label>
+          <input type="file" id="file-upload" accept=".csv,.xls,.xlsx,.json" required />
+
+          <button type="submit">Subir Datos</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>🔄 Actualizar Base de Datos</h3>
+        <p>Selecciona un conjunto de datos existente para actualizarlo.</p>
+        <form>
+          <label for="existing-dataset">Fuente existente</label>
+          <select id="existing-dataset">
+            <option value="">Selecciona una fuente</option>
+            <option value="clientes2024">Clientes 2024</option>
+            <option value="ventas-q1">Ventas Q1</option>
+            <option value="stocks-tiendas">Stocks - Tiendas</option>
+          </select>
+
+          <label for="update-file">Archivo de actualización</label>
+          <input type="file" id="update-file" accept=".csv,.json" />
+
+          <button type="submit">Actualizar Datos</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>🗂️ Copias de Seguridad</h3>
+        <p>Consulta las copias de seguridad creadas o genera una nueva.</p>
+        <button style="margin-bottom: 20px;">Generar nueva copia</button>
+
+        <div class="messages">
+          <div class="message">🧾 Backup generado: backup_2025-05-28.zip</div>
+          <div class="message">🧾 Backup generado: backup_2025-05-15.zip</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>📜 Registro de Actividad</h3>
+        <div class="messages">
+          <div class="message">📄 2025-05-28: Se actualizó "Clientes 2024"</div>
+          <div class="message">📄 2025-05-27: Se subió "Ventas Q1"</div>
+          <div class="message">📄 2025-05-25: Se creó backup automático</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2025 Data Bloom Analytics. Todos los derechos reservados.</p>
+        <p>🔒 Página verificada · Licencia de uso · Términos y condiciones</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
