@@ -9,43 +9,102 @@
 <body>
   <nav class="sidebar">
     <div class="sidebar-logo">
-        <img src="../app/ico/DBA.png" alt="Logo Data Bloom Analytics" />
-      </div>
+      <img src="../app/ico/DBA.png" alt="Logo Data Bloom Analytics" />
+    </div>
     <ul>
-        <li><a href="../sobre/sobre.html">Data Bloom Analytics</a></li>
-        <li>a</li>
-        <li>a </li>
-        <li>a</li>
-        <li>a</li>
-        
-        <li><a href="../app/app.html">🏠 Inicio</a></li>
-        <li><a href="../reporte/reporte.html">📤 Compartir reportes</a></li>
-        <li><a href="../alerta/alerta.html">⚠️ Configurar alertas</a></li>
-        
-      </ul>
+      <li><a href="../sobre/sobre.html">Data Bloom Analytics</a></li>
+      <li>a</li>
+      <li>a</li>
+      <li>a</li>
+      <li>a</li>
+      <li><a href="../app/app.html">🏠 Inicio</a></li>
+      <li><a href="../reporte/reporte.html">📤 Compartir reportes</a></li>
+      <li><a href="../alerta/alerta.html">⚠️ Configurar alertas</a></li>
+    </ul>
   </nav>
+
   <div class="content-wrapper">
-  <main class="main-content">
-    <section>
-      <h2>Visualización de resultados</h2>
-      
-      <div class="chart-placeholder">
-        <img src="img/datos.jpg" alt="Gráfico de ventas" />
-      </div>
-      <div class="stats">
-        <p>Ventas totales: 12,345 unidades</p>
-        <p>Crecimiento mensual: 8.7%</p>
-        <p>Producto más vendido: Producto A</p>
-        <p>Alertas activas: 2</p>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-      <div class="footer-content">
-        <p>    © 2025 Data Bloom Analytics. Todos los derechos reservados.  -   🔒 Página verificada · Licencia de uso · Términos y condiciones</p>
+    <main class="main-content">
+      <section>
+        <h2>📊 Visualización de Resultados</h2>
+        <br>
+        <br>
+        <div class="chart-placeholder">
+          <span><img src="img/datos.jpg"></span>
+          <div class="stats">
+            <p><strong>·    |Ventas totales:</strong> 12,345 unidades</p>
+            <p><strong>·    |Crecimiento mensual:</strong> 8.7%</p>
+            <p><strong>·    |Producto más vendido:</strong> Producto A</p>
+            <p><strong>·    |Alertas activas:</strong> 2</p>
+          </div>  
+        </div>
+
         
+      </section>
+
+      <section>
+        <h3>📋 Resumen Ejecutivo</h3>
+        <p>Este informe proporciona una visión general del rendimiento de ventas durante el mes actual.</p>
+      </section>
+
+      <section>
+        <h3>📊 Tabla de Estadísticas</h3>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">
+            <thead>
+              <tr style="background-color: #ecf0f1;">
+                <th style="padding: 12px;">Producto</th>
+                <th style="padding: 12px;">Ventas</th>
+                <th style="padding: 12px;">Crecimiento</th>
+                <th style="padding: 12px;">Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 12px;">Producto A</td>
+                <td style="padding: 12px;">5,000</td>
+                <td style="padding: 12px;">+10%</td>
+                <td style="padding: 12px;">✔️</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px;">Producto B</td>
+                <td style="padding: 12px;">3,200</td>
+                <td style="padding: 12px;">+7.5%</td>
+                <td style="padding: 12px;">✔️</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px;">Producto C</td>
+                <td style="padding: 12px;">1,800</td>
+                <td style="padding: 12px;">-2%</td>
+                <td style="padding: 12px;">⚠️ Bajo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style="margin-top: 30px;">
+        <a href="descargas/estadisticas.xlsx" download style="
+          display: inline-block;
+          background-color: #1abc9c;
+          color: white;
+          padding: 12px 24px;
+          border-radius: 8px;
+          font-size: 1rem;
+          text-decoration: none;
+          font-weight: 600;
+          transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#16a085'" onmouseout="this.style.backgroundColor='#1abc9c'">
+          ⬇️ Descargar hoja de estadísticas (Excel)
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2025 Data Bloom Analytics. Todos los derechos reservados. - 🔒 Página verificada · Licencia de uso · Términos y condiciones</p>
       </div>
     </footer>
-    </div>
+  </div>
 </body>
 </html>
